@@ -15,14 +15,17 @@ export const getServerSideProps = async () => {
 const Home = ({ products, bannerData }) => {
   return (
     <div>
-      <HeroBanner />
+      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
       <div className='products-heading'>
         <h2>Find out more about our most wanted products</h2>
         <p>We love nice things!</p>
       </div>
       <div className='products-container'>
         {products.map((product) => (
-          <Product />
+          <Product
+            key={product._id}
+            product={product}
+          />
         ))}
       </div>
       <FooterBanner />
