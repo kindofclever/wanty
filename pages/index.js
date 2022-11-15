@@ -15,7 +15,9 @@ export const getServerSideProps = async () => {
 const Home = ({ products, bannerData }) => {
   return (
     <div>
-      <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+      <div className='banner-container'>
+        <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+      </div>
       <div className='products-heading'>
         <h2>Find out more about our most wanted products</h2>
         <p>We love nice things!</p>
