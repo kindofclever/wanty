@@ -1,12 +1,8 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import {
-  AiOutlineMinus,
-  AiOutlinePlus,
-  AiOutlineLeft,
-  AiOutlineShopping,
-} from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft } from 'react-icons/ai';
 import { TiDeleteOutline } from 'react-icons/ti';
+import { FaShoppingBasket } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 
 import { useStateContext } from '../context/StateContext';
@@ -55,14 +51,14 @@ const Cart = () => {
           className='cart-heading'
           onClick={() => setShowCart(false)}
         >
-          <AiOutlineLeft />
+          <AiOutlineLeft style={{ colour: '#24213d' }} />
           <span className='heading'>Your Cart</span>
           <span className='cart-num-items'>({totalQuantities} items)</span>
         </button>
 
         {cartItems.length < 1 && (
           <div className='empty-cart'>
-            <AiOutlineShopping size={150} />
+            <FaShoppingBasket size={150} />
             <h3>Your shopping bag is empty</h3>
             <Link href='/'>
               <button
@@ -84,13 +80,13 @@ const Cart = () => {
                 key={item._id}
               >
                 <img
-                  src={urlFor(item?.image[0])}
+                  src={urlFor(item?.image[0]).width(200).height(200).url()}
                   className='cart-product-image'
                 />
                 <div className='item-desc'>
                   <div className='flex top'>
                     <h5>{item.name}</h5>
-                    <h4>${item.price}</h4>
+                    <h4>FantasyCurrency {item.price}</h4>
                   </div>
                   <div className='flex bottom'>
                     <div>
@@ -135,7 +131,7 @@ const Cart = () => {
           <div className='cart-bottom'>
             <div className='total'>
               <h3>Subtotal:</h3>
-              <h3>${totalPrice}</h3>
+              <h3>FantasyCurrency {totalPrice}</h3>
             </div>
             <div className='btn-container'>
               <button
