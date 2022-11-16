@@ -68,12 +68,12 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
+  color: #24213d;
   font-size: 18px;
 }
 .cart-icon {
   font-size: 25px;
-  color: gray;
+  color: #fdbc03;
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
@@ -87,8 +87,8 @@ span.text-red {
   position: absolute;
   right: -8px;
   font-size: 12px;
-  color: #eee;
-  background-color: #f02d34;
+  color: white;
+  background-color: #24213d;
   width: 18px;
   height: 18px;
   border-radius: 50%;
