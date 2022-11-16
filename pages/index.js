@@ -30,7 +30,9 @@ const Home = ({ products, bannerData }) => {
           />
         ))}
       </div>
-      <FooterBanner />
+      <div className='banner-container'>
+        <FooterBanner bannerData={bannerData && bannerData[0]} />
+      </div>
     </div>
   );
 };

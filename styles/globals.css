@@ -220,15 +220,23 @@ span.text-red {
   font-weight: 200;
   color: #24213d;
 }
+
+.footerbanner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #fdbc03;
   border-radius: 15px;
   position: relative;
   height: 400px;
   line-height: 1;
-  color: white;
-  width: 100%;
+  color: #24213d;
+  width: 90%;
   margin-top: 120px;
 }
 .banner-desc {
@@ -239,7 +247,7 @@ span.text-red {
   border-radius: 15px;
   padding: 10px 16px;
   background-color: white;
-  color: red;
+  color: #24213d;
   border: none;
   margin-top: 40px;
   font-size: 18px;
