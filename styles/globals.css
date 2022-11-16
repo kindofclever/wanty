@@ -150,6 +150,9 @@ span.text-red {
   font-size: 20px;
   color: #fdbc03;
 }
+.hero-banner-container button:hover {
+  scale: 1.05;
+}
 .hero-banner-container button {
   border-radius: 15px;
   padding: 10px 16px;
@@ -178,7 +181,7 @@ span.text-red {
   position: absolute;
   top: 0%;
   right: 20%;
-  object-fit: cover;
+  object-fit: scale-down;
   width: 450px;
   height: 450px;
 }
@@ -254,6 +257,10 @@ span.text-red {
   font-weight: 500;
   cursor: pointer;
 }
+.banner-desc button:hover {
+  scale: 1.05;
+}
+
 .banner-desc .left h3 {
   font-weight: 900;
   font-size: 80px;
@@ -266,8 +273,9 @@ span.text-red {
   position: absolute;
   /* top: -35%;
   left: 8%; */
-  top: -25%;
-  left: 25%;
+  top: 0%;
+  left: 30%;
+  transform: scaleY(-1);
 }
 .banner-desc .right {
   line-height: 1.4;
@@ -361,8 +369,7 @@ span.text-red {
   padding: 20px;
 }
 .product .cart-product-image {
-  width: 180px;
-  height: 150px;
+  object-fit: scale-down;
   border-radius: 15px;
   background-color: #ebebeb;
 }

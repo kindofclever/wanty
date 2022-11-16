@@ -11,7 +11,7 @@ const HeroBanner = ({ heroBanner }) => {
         <h3>{heroBanner.midText}</h3>
         <h1>{heroBanner.largeText1}</h1>
         <img
-          src={urlFor(heroBanner.image).url()}
+          src={urlFor(heroBanner.image).width(500).url()}
           alt='keyboard'
           className='hero-banner-image'
         />
@@ -21,7 +21,7 @@ const HeroBanner = ({ heroBanner }) => {
           </Link>
           <div className='desc'>
             <h5>{heroBanner.desc}</h5>
-            <p>DESCRIPTION</p>
+            <p>WE LOVE FANCY PRODUCTS</p>
           </div>
         </div>
       </div>
