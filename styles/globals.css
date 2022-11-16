@@ -107,14 +107,14 @@ span.text-red {
   cursor: pointer;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
-  color: #324d67;
+  color: #24213d;
 }
 .product-card:hover {
   transform: scale(1.05, 1.05);
 }
 .product-image {
   border-radius: 15px;
-  background-color: #ebebeb;
+  background-color: white;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
@@ -125,7 +125,7 @@ span.text-red {
 .product-price {
   font-weight: 800;
   margin-top: 6px;
-  color: black;
+  color: #24213d;
 }
 
 .banner-container {
@@ -148,6 +148,7 @@ span.text-red {
 
 .hero-banner-container .beats-solo {
   font-size: 20px;
+  color: #fdbc03;
 }
 .hero-banner-container button {
   border-radius: 15px;
@@ -165,6 +166,7 @@ span.text-red {
 .hero-banner-container h3 {
   font-size: 4rem;
   margin-top: 4px;
+  color: #fdbc03;
 }
 .hero-banner-container h1 {
   color: white;
@@ -176,6 +178,7 @@ span.text-red {
   position: absolute;
   top: 0%;
   right: 20%;
+  object-fit: cover;
   width: 450px;
   height: 450px;
 }
@@ -205,15 +208,17 @@ span.text-red {
 .products-heading {
   text-align: center;
   margin: 40px 0px;
-  color: #324d67;
+  color: #24213d;
 }
 .products-heading h2 {
   font-size: 40px;
   font-weight: 800;
+  color: #24213d;
 }
 .products-heading p {
   font-size: 16px;
   font-weight: 200;
+  color: #24213d;
 }
 .footer-banner-container {
   padding: 100px 40px;
