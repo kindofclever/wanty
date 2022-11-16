@@ -438,20 +438,19 @@ span.text-red {
   gap: 40px;
   margin: 40px;
   margin-top: 60px;
-  color: #324d67;
+  color: #24213d;
 }
 
 .product-detail-image {
   border-radius: 15px;
-  background-color: #ebebeb;
-
+  background-color: white;
   width: 400px;
   height: 400px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 .product-detail-image:hover {
-  background-color: #f02d34;
+  background-color: #fdbc03;
 }
 .small-images-container {
   display: flex;
@@ -460,17 +459,17 @@ span.text-red {
 }
 .small-image {
   border-radius: 8px;
-  background-color: #ebebeb;
+  background-color: white;
   width: 70px;
   height: 70px;
   cursor: pointer;
 }
 
 .selected-image {
-  background-color: #f02d34;
+  background-color: #fdbc03;
 }
 .reviews {
-  color: #f02d34;
+  color: #fdbc03;
   margin-top: 10px;
   display: flex;
   gap: 5px;
@@ -484,19 +483,19 @@ span.text-red {
   margin-top: 10px;
 }
 .reviews p {
-  color: #324d67;
+  color: #24213d;
   margin-top: 0px;
 }
 .product-detail-desc .price {
   font-weight: 700;
   font-size: 26px;
   margin-top: 30px;
-  color: #f02d34;
+  color: #fdbc03;
 }
 .price .old-price,
 .product-price .old-price,
 .price .old-price {
-  color: gray;
+  color: #24213d;
   text-decoration: line-through;
 }
 .product-detail-desc .quantity {
@@ -504,6 +503,7 @@ span.text-red {
   gap: 20px;
   margin-top: 10px;
   align-items: center;
+  border-radius: 21px;
 }
 .product-detail-desc .buttons {
   display: flex;
@@ -511,12 +511,13 @@ span.text-red {
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
-  border: 1px solid #f02d34;
+  border: 1px solid #24213d;
   margin-top: 40px;
+  border-radius: 21px;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  color: #f02d34;
+  color: #24213d;
   cursor: pointer;
   width: 200px;
   transform: scale(1, 1);
@@ -527,13 +528,13 @@ span.text-red {
 }
 .buttons .buy-now {
   width: 200px;
-
   padding: 10px 20px;
-  background-color: #f02d34;
+  background-color: #24213d;
   color: white;
   border: none;
   margin-top: 40px;
   font-size: 18px;
+  border-radius: 21px;
   font-weight: 500;
   cursor: pointer;
   transform: scale(1, 1);
@@ -543,7 +544,7 @@ span.text-red {
   transform: scale(1.1, 1.1);
 }
 .quantity-desc {
-  border: 1px solid gray;
+  border: 1px solid #24213d;
   padding: 6px;
 }
 .quantity-desc span {
@@ -552,15 +553,15 @@ span.text-red {
   cursor: pointer;
 }
 .quantity-desc .minus {
-  border-right: 1px solid gray;
-  color: #f02d34;
+  border-right: 1px solid #24213d;
+  color: #24213d;
 }
 .quantity-desc .num {
-  border-right: 1px solid gray;
+  border-right: 1px solid #24213d;
   font-size: 20px;
 }
 .quantity-desc .plus {
-  color: rgb(49, 168, 49);
+  color: #24213d;
 }
 
 .maylike-products-wrapper {
